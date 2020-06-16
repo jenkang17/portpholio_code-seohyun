@@ -1,0 +1,53 @@
+/*reset*/
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0;}
+body{font-family:"나눔 고딕", "맑은 고딕", "돋움";font-size:14px;}
+a{text-decoration:none;color:#222}
+ul,li{list-style:none}
+address{font-style:normal}
+.content {text-align: center; padding-top: 100px;}   
+.content .content_wrap {width: 1200px; margin: auto; position: relative;}
+.content .content_wrap .location { position: absolute; top: -60px; right:0;}
+.content .content_wrap .location span {position: absolute; left: -9999px; top: -9999px;}
+.content .content_wrap .location ul {overflow: hidden}
+.content .content_wrap .location ul li {float: left; color: #333}
+.content .content_wrap .location ul li:last-child {padding-left: 5px;font-weight: bold}
+.content h2 {font-size: 28px; color: #333;margin-bottom: 50px;}
+.content form {text-align: left;width: 1200px; margin: 0 auto 50px; }
+.content form fieldset {/*border: 1px solid #cfcfcf;*/ padding: 0; border: 0}
+.content form fieldset legend {position: absolute; top: -9999px; left: -9999px;}
+.content form fieldset table {width: 100%}
+.content form fieldset table tbody tr {display: block; border-bottom: 1px solid #cfcfcf; padding: 16px 16px 16px 30px;}
+.content form fieldset table tbody tr:first-child {padding-top: 0}
+.content form fieldset table tbody tr .txt {width: 250px; color: #333; }
+.content form fieldset table tbody tr .txt label {display: inline-block; vertical-align: middle;font-size: 16px;}
+.content form fieldset table tbody tr .txt label span {color:#c00000; font-weight: bold;display: inline-block; vertical-align: middle; margin-left: 3px;}
+.content form fieldset table tbody tr td input {height: 22px; width: 185px; font-size: 14px;}
+.content form fieldset table tbody tr td p {font-size: 13px;}
+.content form fieldset table tbody tr td .uid_limit {font-size: 13px; color: #666}
+.content form fieldset table tbody tr td .input_msg {font-size: 13px; color: #666}
+.content form fieldset table tbody tr td .idcon_bt {width: 85px;font-size: 16px;margin: 0 5px 5px 5px; padding-bottom: 2px; height: 28px; background: #999;vertical-align: middle; font-weight: 300;}
+.content form fieldset table tbody tr .sms_agree label {font-size: 12px;}
+.content form fieldset table tbody tr .sms_agree p {color: #666}
+.content form fieldset table tbody tr .email_agree label {font-size: 12px;}
+.content form fieldset table tbody tr .email_agree p {color: #666}
+.content form fieldset table tbody .mobile_number td select {width: 50px; height:28px;font-size: 14px;}
+.content form fieldset table tbody .mobile_number td input {width: 50px;}
+.content form fieldset table tbody .sms td label input {margin: 0; margin-right:5px;display: inline-block;vertical-align: middle;width: 16px;}
+.content form fieldset table tbody .email02 td label input {margin: 0; margin-right:5px;display: inline-block;vertical-align: middle;width: 16px;}
+.content form fieldset table tbody .email01 .email_sel {height: 28px;display: inline-block; vertical-align: middle; margin-bottom: 1px;}
+.content .terms {width:1200px; margin:0 auto 50px; text-align: right;}
+.content div h3 {color: #333; font-size: 24px}
+.content .terms h3 {margin-bottom: 20px; text-align: center;}
+.content .terms .terms_content{border: 1px solid #cfcfcf; padding: 5px 20px 20px; height: 150px;overflow: auto;margin-bottom: 10px;}
+.content .terms .terms_content p {margin-bottom: 30px; color: #333}
+.content .terms p {display: inline-block; text-align: left;}
+.content .terms label input {display: inline-block; vertical-align: middle;width: 16px;height: 16px;}
+.content .privacy {width:1200px; margin:0 auto 50px; text-align: right;}
+.content .privacy h3 {margin-bottom: 20px; text-align: center;}
+.content .privacy .privacy_content{border: 1px solid #cfcfcf; padding: 5px 20px 20px; height: 150px;overflow: auto;margin-bottom: 10px;}
+.content .privacy .privacy_content p {margin-bottom: 30px;color: #333}
+.content .privacy p {display: inline-block; text-align: left;}
+.content .privacy label input {display: inline-block; vertical-align: middle;width: 16px;height: 16px;}
+.content button {width: 200px; height: 60px; font-size: 1.17em; font-weight: bold; color: #fff; border: 0;border-radius: 5px; margin-bottom: 100px;}
+.content .join_bt {background:#666;}
+.content .cancel_bt {background:#999;}

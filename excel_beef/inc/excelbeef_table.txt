@@ -1,0 +1,11 @@
+create table excelbeef (
+idx int primary key auto_increment,
+uid varchar(16) not null,
+pwd varchar(16) not null,
+uname varchar(12) not null,
+mobile varchar(20) not null,
+smsRec varchar(5) not null,
+email varchar(50) not null,
+emailRec varchar(5) not null,
+regDate datetime not null
+);

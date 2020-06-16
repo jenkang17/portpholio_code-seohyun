@@ -1,0 +1,91 @@
+/*reset*/
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0;}
+body{font-family:"나눔 고딕", "맑은 고딕", "돋움";font-size:14px;}
+a{text-decoration:none;color:#222}
+ul,li{list-style:none}
+address{font-style:normal}
+
+/*skip_menu*/
+.skip_menu {position: relative; z-index: 1000;}
+.skip_menu a {display: block; position: absolute;top:-60px; left: 0;width: 150px; border: 2px solid #7e2f34;text-align: center;background: #666;color: #fff}
+.skip_menu a:active,.skip_menu a:focus{top:0;z-index:1000;text-decoration:none}
+.skip_menu span{display:inline-block;padding:2px 6px 0 0;color:#fff;letter-spacing:-1px;font-size:13px;line-height:26px}
+.skip_menu >.footer {/*top:168px;*/padding-top: 0;}
+.wrap {width: 100%;}
+/*header*/
+
+
+.content {text-align: center; padding-top: 100px; position: relative;}   
+.content .content_wrap {width: 1200px; margin: auto; position: relative}
+.content .content_wrap .location { position: absolute; top: -60px; right: 0}
+.content .content_wrap .location span {position: absolute; left: -9999px; top: -9999px;}
+.content .content_wrap .location ul {overflow: hidden}
+.content .content_wrap .location ul li {float: left; color: #333}
+.content .content_wrap .location ul li:nth-child(2) {padding-left: 5px;}
+.content .content_wrap .location ul li:last-child {padding-left: 5px;font-weight: bold}
+.content h2 {font-size: 30px; color: #333;margin-bottom: 30px;}
+.content .content_wrap .notice{ width: 1200px; }
+.content .content_wrap .notice .notice_header {border-bottom: 1px solid #333;overflow: hidden; padding-bottom: 10px;}
+.content .content_wrap .notice .notice_header p { font-size: 28px; color: #111; font-weight: bold;margin-bottom: 20px; }
+.content .content_wrap .notice .notice_header ul {overflow: hidden; float: right;}
+.content .content_wrap .notice .notice_header ul li {color: #333;float: left; padding: 0 11px 0 10px; background: url(images/notice_bar.png) no-repeat right 4px;}
+.content .content_wrap .notice .notice_header ul li:first-child {padding-left: 0}
+.content .content_wrap .notice .notice_header ul li:last-child {padding-right: 0; background: none}
+.content .content_wrap .notice .notice_content {margin: auto;padding: 30px 0 20px 0;border-bottom: 1px solid #333; margin-bottom: 30px;}
+.content .content_wrap .notice .notice_content p { text-indent: -9999px;}
+.content .content_wrap .notice .list_bt {background: #999;width: 100px; padding: 12px 0 12px;display: block; margin: auto; color: #fff; font-weight: bold; border-radius: 7px; margin-bottom: 30px;font-family: "나눔고딕"; letter-spacing:1px}
+.content .content_wrap .notice .list_bt:hover{background: #cfcfcf; transition: 0.4s}
+.content .content_wrap .notice .notice_list {margin-bottom: 100px;}
+.content .content_wrap .notice .notice_list ul {overflow: hidden;border: 1px solid #cfcfcf; padding-left: 20px;}
+.content .content_wrap .notice .notice_list ul li {text-align: left; float: left; padding: 12px 0 12px 0; width: 78%}
+.content .content_wrap .notice .notice_list ul li a {display: block;height: 100%; width: 50%}
+.content .content_wrap .notice .notice_list ul li:first-child { width: 20%;}
+.content .content_wrap .notice .notice_list .next {border-bottom: 0;}
+.content .content_wrap .notice .notice_list .next li{}
+.content .content_wrap .notice .notice_list .next li:first-child {background: url(images/notice_next.png) no-repeat left center; padding-left: 18px;}
+.content .content_wrap .notice .notice_list .prev li{}
+.content .content_wrap .notice .notice_list .prev li:first-child {background: url(images/notice_prev.png) no-repeat left center; padding-left: 18px;}
+
+.footer {width: 1200px;margin: auto;background: url(images/footer_bar.png) no-repeat top left; padding-top: 24px; overflow: hidden; position: relative;}
+.footer h2 {position: absolute; left: -9999px; top: -9999px;}
+.footer .excel_cs{float: left;}
+.footer .excel_cs h3 {position: absolute;left: -9999px; top: -9999px;}
+.footer .excel_cs ul .number {text-indent: -9999px; width:181px; height: 21px; background: url(images/footer_cs01.jpg) no-repeat;margin-bottom: 20px; }
+.footer .excel_cs ul li p {font-size: 12px; color:#999;font-weight: bold; line-height: 12px;}
+.footer .excel_cs ul li:last-child {margin-top: 9px;}
+.footer .right {float: right;overflow: hidden;}
+.footer .right .bank_info {float: left;margin-right: 60px;}
+.footer .right .bank_info h3{text-indent: -9999px;width:78px; height: 11px; background: url(images/bank_info.jpg) no-repeat;margin-bottom: 20px;}
+.footer .bank_info ul li {font-size: 12px; color: #999; font-weight: bold;line-height: 12px;margin-top: 4px;}
+.footer .right .bank_info ul li:first-child {margin-top: 0}
+.footer .right .bank_info ul li:last-child {margin-top: 9px;}
+.footer .right .bank_info ul li strong {color: #666;line-height: 14px;}
+.footer .right .return {float: right;font-size: 0;}
+.footer .right .return h3 {text-indent: -9999px; width:153px; height: 11px; background: url(images/returm.jpg) no-repeat; margin-bottom: 20px; }
+.footer .right .return ul li {font-size: 12px; color: #999; font-weight: bold;}
+.footer .right .return a {text-indent: -9999px;display: inline-block; width: 61px; height: 19px;margin-top: 13px;}
+.footer .right .return a:hover {opacity: 0.7;}
+.footer .right .return .return_bt01 {background: url(images/returm_bt01.jpg) no-repeat;margin-right: 10px;transition: 0.3s;}
+.footer .right .return .return_bt02 {background: url(images/returm_bt02.jpg) no-repeat;transition: 0.3s;}
+.footer .terms {margin: 145px 0 7px 0;}
+.footer .terms h3 {position: absolute;left: -9999px; top: -9999px;}
+.footer .terms ul {overflow: hidden;}
+.footer .terms ul li {float: left; font-size: 12px;font-weight: bold; line-height: 14px; padding:0 6px 0 5px; background: url(images/terms_bar.png) no-repeat right center;}
+.footer .terms ul li:first-child {padding-left: 0;}
+.footer .terms ul li:last-child {padding-right: 0; background: none;}
+.footer .terms ul li a {color: #999;}
+.footer .footer_bottom {font-size: 11px;font-weight: bold; line-height: 16px;color: #999;margin-bottom: 20px;}
+.footer .footer_bottom .inline {display: inline-block;}
+.footer .footer_bottom address {display: inline-block;}
+.footer .certification {position: absolute; bottom: 20px; right: 0;}
+.footer .certification h3 {position: absolute;left: -9999px;top: -9999px;}
+.footer .certification ul {overflow: hidden;}
+.footer .certification ul li {text-indent: -9999px;height: 60px; float: left;}
+.footer .certification ul li a {height: 100%;display: block;}
+.footer .certification ul .certi01 {width: 90px; background: url(images/pic_041.png) no-repeat;opacity: 0.5;}
+.footer .certification ul .certi01:hover{opacity: 1;transition: .4s}
+.footer .certification ul .certi02 {width: 88px; background: url(images/pic_043.png) no-repeat center;opacity: 0.5;}
+.footer .certification ul .certi02:hover{opacity: 1;transition: .4s}
+.footer .certification ul .certi03 {width: 50px; background: url(images/pic_042.png) no-repeat;opacity: 0.5;}
+.footer .certification ul .certi03:hover{opacity: 1;transition: .4s}
+.footer .top_bt {width: 45px; height: 45px; background: url(images/go_top.png) no-repeat; display: block; text-indent: -9999px; position: fixed; top:700px; right: 250px;}

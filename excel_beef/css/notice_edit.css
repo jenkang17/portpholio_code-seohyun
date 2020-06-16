@@ -1,0 +1,32 @@
+/*reset*/
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0;}
+body{font-family:"나눔 고딕", "맑은 고딕", "돋움";font-size:16px;}
+a{text-decoration:none;color:#222}
+ul,li{list-style:none}
+address{font-style:normal}
+h2 {font-size: 28px; color: #333}
+/*header*/
+.header .gnb {margin-bottom: 0}
+/*content*/
+.content {text-align: center; padding-top: 100px; margin-bottom: 100px;}
+.content .location { position: absolute; top: -60px; right:0;}
+.content .content_wrap .location span {position: absolute; left: -9999px; top: -9999px;}
+.content .content_wrap .location ul {overflow: hidden}
+.content .content_wrap .location ul li {float: left; color: #333}
+.content .content_wrap .location ul li:last-child {padding-left: 5px;font-weight: bold}
+h2 {margin-bottom: 30px}
+form {width: 1000px; margin:auto}
+form fieldset {border: 0; padding: 0}
+form fieldset legend {position: absolute; left: -9999px; top:-9999px}
+form fieldset ul {margin-bottom: 30px; margin-bottom: 30px;}
+form fieldset ul li {border-bottom: 1px solid #999; text-align: left; display: table}
+form fieldset ul li div {display: table-cell; height: 60px;}
+form fieldset ul li div:first-child {display: table;width: 140px; border-right: 1px solid #999;}
+form fieldset ul li div:nth-child(2) {width: 100%;padding: 10px 0 10px 20px;box-sizing: border-box; vertical-align: middle}
+form fieldset ul li .con {height: 176px;}
+form fieldset ul li div strong{line-height: 59px;font-size: 14px; margin-left: 10px; border: 0}
+form fieldset ul li div .id {height: 30px; font-size: 16px; color: #666; font-weight: 600}
+form fieldset ul li div .title {height: 34px; width: 100%;box-sizing: border-box}
+form fieldset ul li div .content {height: 150px; width: 100%; overflow: auto;resize: none; padding: 10px; box-sizing: border-box}
+form fieldset ul li div .get_file {}
+form  button {width: 150px; height: 35px; border-radius: 5px; border: 0; color: #fff; background: #666; font-size: 16px}

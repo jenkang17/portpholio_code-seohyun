@@ -1,0 +1,46 @@
+.content .product div .item_zoom {position: fixed;width: 1000px; background: url(../images/item_zoom_top_bar.png) repeat-x top;background-color: #fff;padding: 75px 30px 30px 30px; left: 50%;margin-left: -500px;top: 55px;overflow: hidden; z-index: 10; border: 1px solid #333; border-top: 0; box-sizing: border-box}
+.content .product div .item_zoom h2 {background: none;width: 60px; height: 15px; background: url(../images/item_h2.jpg) no-repeat; position: absolute; top: 16px; left:25px;}
+.content .product div .item_zoom .item_tenderloin {width: 400px; float: right;}
+.content .product div .item_zoom .item_tenderloin div {float: none;width: 100%}
+.content .product div .item_zoom .item_tenderloin .item_info {font-weight: bold;color: #666; margin-bottom: 35px; position: relative;}
+.content .product div .item_zoom .item_tenderloin .item_info dl {border-bottom: 1px solid #b2b2b2;}
+.content .product div .item_zoom .item_tenderloin .item_info dl dt{font-weight: bold;font-size: 16px;color: #333;padding-bottom: 20px;border-bottom: 1px solid #b2b2b2;}
+.content .product div .item_zoom .item_tenderloin .item_info dl dd {padding-top: 20px;}
+.content .product div .item_zoom .item_tenderloin .item_info dl dd:last-child {margin-bottom: 35px;}
+.content .product div .item_zoom .item_tenderloin .item_info dl dd span {color: #333}
+.content .product div .item_zoom .item_tenderloin .item_info dl .country span {margin-left: 90px;}
+.content .product div .item_zoom .item_tenderloin .item_info dl .price span {margin-left: 76px;}
+.content .product div .item_zoom .item_tenderloin .item_info dl .sale_price span {margin-left: 90px;}
+.content .product div .item_zoom .item_tenderloin .item_info p {font-size: 14px;margin: 10px 0 0 9px;color: #999}
+.content .product div .item_zoom .item_tenderloin .item_info .item_save{width: 30px; height: 30px;background: url(../images/item_save.png) no-repeat;opacity: .5;position: absolute; top: 0; right: 10px; text-indent: -9999px;}
+.content .product div .item_zoom .item_tenderloin .item_info .item_save:hover{background: url(../images/item_save_1.png) no-repeat;;opacity: 1; transition: 0.3s}
+.content .product div .item_zoom .item_tenderloin .item_option {}
+.content .product div .item_zoom .item_tenderloin .item_option p {font-size: 12px; color:#c00000;font-weight: bold; background: url(../images/dialog.png) no-repeat left; padding-left: 25px; margin: 0 0 4px 9px;}
+.content .product div .item_zoom .item_tenderloin .item_option dl {border-top: 2px solid #999;  padding: 20px 10px;overflow: hidden;}
+.content .product div .item_zoom .item_tenderloin .item_option dl dt {font-weight: bold; float: left;}
+.content .product div .item_zoom .item_tenderloin .item_option dl dd{float: left;}
+.content .product div .item_zoom .item_tenderloin .item_option dl .number {margin-left: 35px;}
+.content .product div .item_zoom .item_tenderloin .item_option dl .number input {width: 60px; border: 1px solid #b2b2b2}
+.content .product div .item_zoom .item_tenderloin .item_option dl .price {float: right; color: #00acaa; font-weight: bold; font-size: 16px; line-height: 16px;}
+.content .product div .item_zoom .item_tenderloin .item_option .option_price {padding-top: 42px; border-top:2px solid #999; width: 100%;margin-bottom: 45px;}
+.content .product div .item_zoom .item_tenderloin .item_option .option_price span {font-weight: bold;color: #666;}
+.content .product div .item_zoom .item_tenderloin .item_option .option_price strong {font-size: 28px; color: #00acaa; margin-left:108px;}
+.content .product div .item_zoom .item_tenderloin .item_option .option_price em {font-style: normal; font-size: 12px;color: #00acaa; font-weight: bold;}
+.content .product div .item_zoom .item_tenderloin .item_button {}
+.content .product div .item_zoom .item_tenderloin .item_button ul {overflow: hidden;}
+.content .product div .item_zoom .item_tenderloin .item_button ul li {width: 126.5px; height: 50px; margin-bottom: 0; text-indent: -9999px; float: left; margin-right: 10px;padding: 0;}
+.content .product div .item_zoom .item_tenderloin .item_button ul li > a {display: block; height: 100%}
+.content .product div .item_zoom .item_tenderloin .item_button ul .bt_01 {background: url(../images/item_bt01.png) no-repeat;}
+.content .product div .item_zoom .item_tenderloin .item_button ul .bt_01:hover {background: url(../images/item_bt01_1.png) no-repeat;}
+.content .product div .item_zoom .item_tenderloin .item_button ul .bt_02 {background: url(../images/item_bt02.png) no-repeat;}
+.content .product div .item_zoom .item_tenderloin .item_button ul .bt_02:hover {background: url(../images/item_bt02_1.png) no-repeat;}
+.content .product div .item_zoom .item_tenderloin .item_button ul .bt_03 {margin-right: 0;background: url(../images/item_bt03.png) no-repeat;border: 0}
+.content .product div .item_zoom .item_tenderloin .item_button ul .bt_03:hover {background: url(../images/item_bt03_1.png) no-repeat;}
+.content .product div .item_zoom .item_img {width: 400px; float: left; position: relative;}
+.content .product div .item_zoom .item_img dl {}
+.content .product div .item_zoom .item_img dl .main_img01 {width:400px;  ;height: 400px; margin-bottom: 32px; overflow: hidden;border: 1px solid #cfcfcf; box-sizing: border-box}
+.content .product div .item_zoom .item_img dl .main_img01 img {text-indent: 0}
+.content .product div .item_zoom .item_img dl .img01 {cursor: pointer; text-align: center; width:400px; height: 80px;}
+.content .product div .item_zoom .item_img dl .img01 img {width: 80px;height: 80px; display: inline-block;border: 1px solid #cfcfcf; box-sizing: border-box}
+.content .product div .item_zoom .item_img > a {display: block; text-indent: -9999px;}
+.content .product div .item_zoom .window_close {text-indent: -9999px; width: 20px;height: 20px; display: block;position: absolute;top: 13px; right: 13px; background: url(../images/item_close.jpg) no-repeat;}

@@ -1,0 +1,1315 @@
+@charset "utf-8";
+
+/* reset */
+body {
+	/*font:normal 12px Arial, sans-serif;*/
+	/*line-height:1.8;*/
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+img {border:none;}
+
+br	{letter-spacing: 0;}
+h1, h2, h3, h4, h5, h6 {font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+li {list-style:none;}
+a {text-decoration:none; color: black;}
+
+
+/*공통요소*/
+.clearfix:after {
+  content: '';
+  zoom:1;
+  clear: both;
+  display: block;
+  /*border: 1px solid red;*/
+}
+body {width: 100%;}
+.wrap {width: 100%;}
+.wrap > .mobile_nav {display: none;}
+header {width: 100%; font-size: 0;}
+nav {width: 100%;}
+section {}
+
+
+/****header요소****/
+header {text-align: center;}
+header > .inner {
+  /*border: 1px solid orange;*/
+  /*width: 1189px;*/
+  width: 91.461538%;
+  display: inline-block;
+  max-width: 1190px;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+header > .inner > h1 {/*border: 1px solid red;*/ float: left; margin-top: 15px;}
+header > .inner > .util {/*border: 1px solid red;*/ float: right; font-size: 0; margin-top: 38px; width: 283px; text-align: left;}
+header > .inner > .util > li {display: inline-block; font-size: 16px;}
+header > .inner > .util > li > a {color: #3b4046; font-weight: bold; letter-spacing: -0.2px;}
+header > .inner > .util > li > a:hover {color: #dbaa00; text-decoration: underline;}
+header > .inner > .util > li + li {margin-left: 24px;}
+header > .inner > .util > .search {margin-left: 19px; position: absolute; right: 0;}
+header > .inner > .util > .search > a > img {width: 16px; height: 16px;}
+header > .inner > .util > .search > form {padding: 0 10px 0; position: absolute; right: 18px; bottom: -8px; display: none; }
+header > .inner > .util > .search > form.on {display: block;}
+header > .inner > .util > .search > form > input {
+  width: 280px;
+  padding: 0 15px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px #474c55 solid;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: bold;
+}
+.wrap > header > .inner > .mobile_search > div > .mobileSearchBox {display: none;}
+header > nav {
+  background-color: #3b4046;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  position: relative;
+}
+header > nav > .logo {opacity: 0;}
+header > nav.fix{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+  }
+header > nav.fix > .logo {
+  width: 67px;
+  height: 32px;
+  /*background-color: #3b4046;*/
+  background: url('../images/logo-cargill-white.png') no-repeat;
+  background-size: 67px 32px;
+  position: absolute;
+  top: 15px;
+  left: 18%;
+  opacity: 1;
+  transition:all 0.8s ease;
+}
+header > nav > ul {
+  background-color: #3b4046;
+  max-width: 847px;
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  text-align: justify;
+  /*padding-bottom: 13px;*/
+  position: relative;
+}
+header > nav > ul:after {
+  content: '';
+  width: 100%;
+  line-height: 0;
+  display: inline-block;
+}
+header > nav > ul > li {
+  /*border: 1px solid green;*/
+  font-size: 15px;
+  line-height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header > nav > ul > li > a {
+    /*border: 1px solid blue;*/
+    padding: 20px 0;
+    color: #ffffff;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+header > nav > ul > li > a:hover {color: #dbaa00; }
+header > nav > ul > li > a:after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+}
+header > nav > ul > li > a:hover:after {background-color: #dbaa00;}
+header > nav > ul > li.active > a:after {background-color: #dbaa00;}
+header > nav > ul > li > div {
+    /*border: 1px solid blue;*/
+    width: 799px;
+    height: 186px;
+    position: absolute;
+    background-color: #484c55;
+    font-size: 0;
+    padding: 19px 29px 25px 72px;
+    top: 44px;
+    left: -44px;
+    z-index: 1000;
+}
+header > nav > ul > li > div:after {
+    content: '';
+    width: 54px;
+    height: 50px;
+    background-color: #d9a825;
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+header > nav > ul > li > div > .subject {
+    /*border: 1px solid red;*/
+    width: 115px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-size: 16px;
+    display: block;
+    line-height: 16px;
+}
+header > nav > ul > li > div > a:hover {color: #dbaa00; text-decoration: underline;}
+header > nav > ul > li > div > ul {
+    /*border: 1px solid yellow;*/
+    float: left;
+    width: 246px;
+    padding: 5px 0 16px 24px;
+    /*font-weight: bold;*/
+    }
+header > nav > ul > li > div > ul.first {padding-left: 10px;}
+header > nav > ul > li > div > ul + ul {border-left: 1px solid #ffffff;}
+header > nav > ul > li > div > ul > li {}
+header > nav > ul > li > div > ul > li + li {margin-top: 5px;}
+header > nav > ul > li > div > ul > li > a {color: #ffffff; font-size: 14px; line-height: 14px;}
+header > nav > ul > li > div > ul > li > a:hover { color: #dbaa00; text-decoration: underline; }
+
+header > nav > ul > li > div.about {display: none;}
+header > nav > ul > li > div.about > ul {min-height: 115px; height: 100px;}
+
+header > nav > ul > li > div.sustainability {display: none;}
+header > nav > ul > li > div.sustainability > ul {min-height: 62px;}
+
+header > nav > ul > li > div.products {display: none; }
+header > nav > ul > li > div.products > .subject {width: 170px;}
+header > nav > ul > li > div.products > ul {min-height: 115px; height: 100px;}
+
+header > nav > ul > li > div.news {display: none;}
+header > nav > ul > li > div.news > .subject {width: 50px;}
+header > nav > ul > li > div.news > ul {min-height: 0;}
+
+header > nav > ul > li > div.careers {display: none;}
+header > nav > ul > li > div.careers > .subject {width: 66px;}
+header > nav > ul > li > div.careers > ul {min-height: 115px; height: 100px;}
+
+header > nav > ul > li > a.open + div.active {display: block;}
+
+header > nav > ul > li > div > .close {width: 13px; height: 13px; position: absolute; top: 18px; right: 11px;}
+header > nav > ul > li > div > .close > img {width: 13px; height: 13px; vertical-align: top;}
+
+
+/*----------section.visual---------- */
+section.visual {
+  /*border: 1px solid blue;*/
+  width: 100%;
+  height: 675px;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+section.visual > video {
+  position: absolute;
+  top: 0;
+}
+section.visual > .description {
+  width: 100%;
+  /*height: 110px;*/
+  background-color: #daaa00;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  position: absolute;
+  bottom: 0;
+
+}
+section.visual > .description > .headline {
+  /*border: 1px solid red;*/
+  text-align: left;
+  text-align: left;
+  position: absolute;
+  top: -244px;
+  width: 100%;
+  padding-left:
+}
+section.visual > .description > .headline > h2 {
+  /*border: 1px solid blue;*/
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 62px;
+  display: inline-block;
+  width: 100%;
+  max-width: 930px;
+  text-align: left;
+  margin-left: 18%;
+}
+section.visual > .description > .content {
+  /*border:1px solid blue;*/
+  max-width: 1285px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  padding: 50px 0 55px 10px;
+}
+section.visual > .description > .thrive {
+  width: 1280px;
+  height: 50px;
+  background: url('../images/home-slider-thrive.png') no-repeat;
+  background-position: right;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  border-left: 4000px solid #daaa00;
+}
+section.visual > .description > div > * {
+  font-size: 24px;
+  display: block;
+}
+section.visual > .description > div > strong {
+  font-weight: normal;
+  line-height: 33px;
+}
+section.visual > .description > div > span {
+  line-height: 30px;
+}
+
+/********content시작******/
+section.more {
+  /*border: 1px solid blue;*/
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0;
+}
+section.more > div {
+  /*border: 1px solid green;*/
+  width: 100%;
+  max-width: 1285px;
+  display: inline-block;
+}
+section.more > div > .more_left {
+  /*border: 1px solid red;*/
+  width: 50%;
+  height: 583px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+}
+section.more > div > .more_left > .image {
+  width: 100%;
+  height: 583px;
+  background: url('../images/Climate_preview.jpg') no-repeat;
+  background-size: cover;
+}
+section.more > div > .more_left > .sets {
+  /*border: 1px solid yellow;*/
+  background: rgba(99,140,28,0.8);
+  height: 184px;
+  text-align: left;
+  padding: 76px 0 0 30px;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+}
+section.more > div > .more_left > .sets > h3 > a {color: #ffffff;font-size: 20px; line-height: 22px; font-weight: normal;}
+section.more > div > .more_left > .sets > h3 > a:hover {text-decoration: underline;}
+section.more > div > .more_left > .sets > p {color: #ffffff; font-size: 15px;}
+section.more > div > .more_left > .sets > a > span {color: #ffffff;}
+section.more > div > .more_left > .sets > .more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: #474c55;
+  border-radius: 4px;
+  font-size: 15px;
+}
+section.more > div > .more_left > .sets > .more:hover {background-color: #8d919a;}
+
+section.more > div > .more_right {
+  /*border: 1px solid blue;*/
+  width: 50%;
+  height: 583px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  float: right;
+}
+section.more > div > .more_right > .brings {
+  /*border: 1px solid red;*/
+  width:100%;
+  /*height: 288px;*/
+  height: calc(50% - 10px);
+  margin-bottom: 20px;
+  position: relative;
+  background: url('../images/preview-ft-collins-canola.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+/*section.more > div > .more_right > .brings > .image {
+  border: 1px solid blue;
+  width:100%;
+  height: 288px;
+  background: url('../images/preview-ft-collins-canola.jpg');
+  background-size: cover;
+  background-position: center center;
+}*/
+section.more > div > .more_right > .brings > .sets {
+  width: 40%;
+  background: rgba(241,241,241,0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: inline-block;
+}
+section.more > div > .more_right > .brings > .sets > div{
+  /*border: 1px solid blue;*/
+  width: 200px;
+  text-align: left;
+  display: inline-block;
+  margin-top: 30px;
+}
+section.more > div > .more_right > .brings > .sets > div > h3 > a {
+  color: #474c55;
+  font-size: 20px;
+  line-height: 22px;
+}
+section.more > div > .more_right > .brings > .sets > div > h3 > a:hover {text-decoration: underline;}
+section.more > div > .more_right > .brings > .sets > div > h3 > p {opacity: 1; font-size: 17px; color: #474c55;}
+section.more > div > .more_right > .brings > .sets > div > .more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: #474c55;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+section.more > div > .more_right > .brings > .sets > div > .more:hover {background-color: #8d919a;}
+
+section.more > div > .more_right > .tackling {
+  /*border: 1px solid red;*/
+  width: 50%;
+  height: calc(50% - 0px);
+  box-sizing: border-box;
+  float: left;
+  padding-right: 10px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+section.more > div > .more_right > .tackling > .bgc {
+  width: 100%;
+  height: calc(100% - 10px);
+  background-color: #DBAA00;
+}
+section.more > div > .more_right > .tackling > .sets {
+  /*border: 1px solid red;*/
+  width: 80%;
+  text-align: left;
+  display: inline-block;
+  margin-top: 87px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+section.more > div > .more_right > .tackling > .sets > div {
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+section.more > div > .more_right > .tackling > .sets > div > h3 > a {color: #ffffff; font-size: 20px; line-height: 22px;}
+section.more > div > .more_right > .tackling > .sets > div > h3 > a:hover {text-decoration: underline;}
+section.more > div > .more_right > .tackling > .sets > div > .more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: #474c55;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+section.more > div > .more_right > .tackling > .sets > div > .more:hover {background-color: #8d919a;}
+
+section.more > div > .more_right > .reports {
+  /*border: 1px solid blue;*/
+  width: 50%;
+  height: calc(50% - 0px);
+  padding-left: 10px;
+  box-sizing: border-box;
+  float: right;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+section.more > div > .more_right > .reports > .bgc {
+  width: 100%;
+  height: calc(100% - 10px);
+  background-color: #ABAD25;
+}
+section.more > div > .more_right > .reports > .sets {
+  /*border: 1px solid blue;*/
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 70px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+
+}
+section.more > div > .more_right > .reports > .sets > div {
+  /*border: 1px solid red;*/
+  width: 100%;
+}
+section.more > div > .more_right > .reports > .sets > div > h3 > a {color: #ffffff; font-size: 20px; line-height: 22px;}
+section.more > div > .more_right > .reports > .sets > div > h3 > a:hover {text-decoration: underline;}
+section.more > div > .more_right > .reports > .sets > div > p {font-size: 11px; color: #ffffff;}
+section.more > div > .more_right > .reports > .sets > div > .more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: #474c55;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+section.more > div > .more_right > .reports > .sets > div > .more:hover {background-color: #8d919a;}
+
+section.more > div > .new_all {
+  padding: 0 10px;
+  font-size: 16px;
+
+}
+section.more > div > .new_all > a:hover {text-decoration: underline;}
+section.more > div > .new_all > .left { color: #3d83c1; font-weight: bold; float: left; margin-top: 6px;}
+section.more > div > .new_all > .right {float: right;color: #3d83c1; font-weight: bold; margin-top: 6px;}
+
+section.markets {
+  /*border: 1px solid green;*/
+  width: 100%;  margin-top: 30px;
+
+}
+section.markets > .markets_We_Serve {
+  width: 100%;
+  /*height: 136px;*/
+  background-color: #638C1C;
+}
+section.markets > .markets_We_Serve > div {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 52px 0 52px;
+  text-align: left;
+}
+section.markets > .markets_We_Serve > div > strong {
+  color: #ffffff;
+  font-size: 38px;
+  /*border: 1px solid red;*/
+}
+section.markets > .part {
+  /*border: 1px solid red;*/
+  width: 100%;
+  margin:0 auto;
+  font-size: 0;
+  max-width: 1285px;
+  margin-top: 30px;
+  overflow: hidden;
+  height: 778px;
+}
+section.markets > .part.on {
+  height: auto;
+}
+section.markets > .view_more > .hide {display: none}
+
+section.markets > .part > div {
+  /*border: 1px solid blue;*/
+  width: 50%;
+  height: 236px;
+  margin-bottom: 25px;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 10px 0 10px;
+}
+section.markets > .part > div > a {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 236px;
+  display: inline-block;
+}
+section.markets > .part > div > a > div {
+  font-size: 15px;
+  height:67px;
+  /*border: 1px solid green;*/
+  text-align: left;
+  background-color: rgba(0,0,0, 0.7);
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  right: 10px;
+}
+section.markets > .part > div > a > div > span {
+  display: inline-block;
+  /*border: 1px solid red;*/
+  padding: 18px 0 0 45px;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 19px;
+}
+
+section.markets > .part > div > .sets {
+  /*border: 1px solid black;*/
+  height: 100%;
+  background-color: rgba(230,183,17, 0.92);
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+}
+section.markets > .part > div > .sets:hover {opacity: 1; transition: all 0.5s ease; }
+section.markets > .part > div > .sets > div {
+  /*border: 1px solid red;*/
+  width: 65%;
+  text-align: left;
+  display: inline-block;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+section.markets > .part > div > .sets > div > strong {
+  /*border: 1px solid blue;*/
+  color: #ffffff;
+  font-size: 49px;
+  line-height: 47px;
+  display: inline-block;
+  width: 400px;
+}
+
+section.markets > .part > div > .sets > div > a {
+  /*border: 1px solid red;*/
+  font-size: 15px;
+  color: #ffffff;
+  padding-left: 19px;
+  background: url('../images/play-button (2).png') no-repeat center left;
+  background-size: 11px 10px;
+  display: inline-block;
+  width: 400px;
+}
+section.markets > .part > div > .sets > div > a:hover {text-decoration: underline;}
+
+section.markets > .part > .food > .image {
+  background: url('../images/homepage-food-bev-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+section.markets > .part > .animal > .image {
+  background: url('../images/homepage-animal-nutrition-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+section.markets > .part > .foodservice > .image {
+  background: url('../images/homepage-foodservice2-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .foodservice > .sets > div {padding-top: 85px;}
+
+section.markets > .part > .bioIndustrial > .image {
+  background: url('../images/homepage-bioindustrial-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .bioIndustrial > .sets > div {padding-top: 85px;}
+
+section.markets > .part > .agricultural > .image {
+  background: url('../images/homepage-agricultural-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .agricultural > .sets > div {padding-top: 85px;}
+section.markets > .part > .agricultural > .sets > div > a {background-position: 0 8px;}
+
+section.markets > .part > .meat > .image {
+  background: url('../images/homepage-meat-poultry-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .meat > .sets > div > a {background-position: 0 8px;}
+
+/*section.markets > .part > .price {display: none}*/
+section.markets > .part > .price > .image {
+  background: url('../images/homepage-price-risk-management-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .price > .sets > div > strong{width: 500px;}
+section.markets > .part > .price > .sets > div > a {background-position: 0 8px;}
+
+/*section.markets > .part > .beauty {display: none}*/
+section.markets > .part > .beauty > .image {
+  background: url('../images/homepage-personal-care-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .beauty > .sets > div > a {background-position: 0 8px;}
+
+/*section.markets > .part > .pharmaceutical {display: none}*/
+section.markets > .part > .pharmaceutical > .image {
+  background: url('../images/homepage-pharmaceutical-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .pharmaceutical > .sets > div {padding-top: 85px;}
+section.markets > .part > .pharmaceutical > .sets > div > a {background-position: 0 8px;}
+
+/*section.markets > .part > .transportation{display: none}*/
+section.markets > .part > .transportation > .image {
+  background: url('../images/homepage-transportation-logistics-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .transportation > .sets > div > a {background-position: 0 8px;}
+
+/*section.markets > .part > .energy {display: none}*/
+section.markets > .part > .energy > .image {
+  background: url('../images/homepage-energy-industrial-630-x-222.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.markets > .part > .energy > .sets > div > a {background-position: 0 8px;}
+
+section.markets > .view_more {
+  /*border: 1px solid red;*/
+  display: block;
+  text-align: center;
+  margin-bottom: 170px;
+}
+section.markets > .view_more > a {
+  /*border: 1px solid blue;*/
+  color: #2c6ca3;
+  padding-right: 24px;
+  background: url('../images/sort-down_blue.png') no-repeat center right;
+  font-size: 16px;
+  font-weight: bold;
+}
+section.markets > .view_more > a:hover {
+  color: #4e525d;
+  background: url('../images/sort-down.png') no-repeat center right;
+  text-decoration: underline;
+}
+
+footer { position: relative; background-color: #484c55; }
+footer > .thrive {
+  /*border: 1px solid blue;*/
+  width: 1280px;
+  height: 50px;
+  font-size: 0;
+  border-left: 4000px solid #484c55;
+  background: url('../images/home-footer-thrive-white.png') no-repeat;
+  background-position: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+footer > .inner {
+  /*border: 1px solid green;*/
+  /*width: 100%;*/
+  padding: 66px 0 35px 35px;
+  display: inline-block;
+  font-size: 0;
+}
+
+footer > .inner > .social_link {
+  /*border: 1px solid red;*/
+  font-size: 0;
+  padding-left: 6px;
+}
+footer > .inner > .social_link > li {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  /*border: 1px solid blue;*/
+  text-indent: -10000px;
+}
+footer > .inner > .social_link > li + li {margin-left: 16px; }
+footer > .inner > .social_link > li > a {
+  /*border: 1px solid yellow; */
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  background-color: #ffffff;
+ }
+footer > .inner > .social_link > li > a:hover {background-color: #DBAA00;}
+footer > .inner > .social_link > li > .twiter {
+  background: url('../images/twiter.png') no-repeat center center;
+  background-color: #ffffff;
+}
+footer > .inner > .social_link > li > .face_book {
+  background: url('../images/facebook-logo.png') no-repeat center center;
+  background-color: #ffffff;
+}
+footer > .inner > .social_link > li > .instagram {
+  background: url('../images/instagram-logo.png') no-repeat center center;
+  background-color: #ffffff;
+}
+footer > .inner > .social_link > li > .you_tube {
+  background: url('../images/youtube-logo.png') no-repeat center center;
+  background-color: #ffffff;
+}
+
+footer > .inner > div {
+  /*border: 1px solid red;*/
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: top;
+  margin-top: 37px;
+}
+footer > .inner > div > * {
+  display: block;
+}
+
+footer > .inner > .contact {
+  /*border: 1px solid yellow;*/
+  width: 212px;
+
+}
+footer > .inner > .contact > a {
+  /*border: 1px solid blue;*/
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 19px;
+
+}
+footer > .inner > .contact > a + a {margin-top: 18px;}
+footer > .inner > .contact > a:before{
+  content: "+";
+  color: #DBAA00;
+  vertical-align: 2px;
+  padding-right: 11px;
+}
+
+footer > .inner > .privacy {width: 189px;}
+footer > .inner > .privacy > a {line-height: 18px; font-size: 13px; font-weight: bold; color: #d4d5d0;}
+footer > .inner > .privacy > a:hover {color: #DBAA00;}
+
+footer > .inner > .website {width: 189px;}
+footer > .inner > .website > a {line-height: 18px; font-size: 13px; font-weight: bold; color: #d4d5d0;}
+footer > .inner > .website > a:hover {color: #DBAA00;}
+
+footer > .inner > .license {display: block; font-size: 15px; font-size: 13px; color: #d4d5d0; margin-top: 65px;}
+
+
+/******* 1600이하 ******/
+  @media screen and (max-width:1600px) {
+  header > nav.fix > .logo  {left: 12%;}
+}
+/******* 1300px이하 ******/
+  @media screen and (max-width:1300px) {
+  header > nav.fix > .logo {left: 5%;}
+}
+/******* 1200px이하 ******/
+  @media screen and (max-width:1200px) {
+    header > nav.fix > .logo {margin-left: -1000px;}
+}
+
+/******* 1280이하 ******/
+@media screen and (min-width: 980px) and (max-width:1280px) {
+  .wrap {/*background-color: #9dffcb;*/}
+  .wrap > section.visual {width: 100%; height: 560px;}
+  .wrap > section.visual > .description {
+    /*border: 1px solid black;*/
+    bottom: 0;
+  }
+   .wrap > section.visual > .description > .headline {
+    width: 100%;
+  }
+  .wrap > section.visual > .description > .headline > h2 {
+    width: 90%;
+    display: inline-block;
+    font-size: 48px;
+    margin-left: 5%;
+  }
+  .wrap > section.visual > .description > .content {
+    /*border:1px solid blue;*/
+    width: 90%;
+    text-align: center;
+    padding: 30px 0 35px 0;
+  }
+  .wrap > section.visual > .description > .content > strong {
+    /*border:1px solid blue;*/
+    text-align: left;
+  }
+  .wrap > section.visual > .description > .content > span {
+    /*border:1px solid red;*/
+    text-align: left;
+  }
+  .wrap > section.more > div > .more_left {padding: 0; padding-right: 10px; }
+  .wrap > section.more > div > .more_left > .sets {left: 0; right: 10px;}
+  .wrap > section.more > div > .more_right {padding-right: 0;}
+  .wrap > section.more > div > .more_right > .tackling > .sets {margin-top: 40px;}
+  .wrap > section.more > div > .more_right > .reports > .sets {margin-top: 40px;}
+  .wrap > section.more > div > .new_all {padding: 0;}
+
+  .wrap > section.markets > .markets_We_Serve > div {margin-left: 58px;}
+
+  .wrap > section.markets > .part > div > .sets > div {width: 80%;}
+  .wrap > section.markets > .part > .price > .sets > div > strong {font-size: 42px; width: 400px;}
+
+
+}
+
+/******* 980이하 하*****/
+@media screen and (max-width:980px) {
+  .wrap {/*background-color: pink;*/}
+  .wrap > section.visual {width: 100%; height: 540px;}
+  .wrap > section.visual > .description > .headline > h2 {
+    font-size: 46px;
+    width: 93%;
+    margin:0;
+    margin-left: 30px;
+  }
+  section.visual > .description > .content {width: 90%;}
+
+  .wrap > section.more {margin-top: 45px;}
+  .wrap > section.more > div > .more_left {
+    width: 100%;
+    height: 583px;
+    position: relative;
+    margin-bottom: 50px;
+    /*display: block;*/
+    padding: 0;
+}
+  .wrap > section.more > div > .more_left > .sets { left: 0; right: 0; }
+  .wrap > section.more > div > .more_left > .sets > p {font-size:15px; font-weight: normal; }
+  .wrap > section.more > div > .more_right {
+    /*display: none;*/
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0;
+  }
+  .wrap > section.more > div > .more_right > .brings {
+    height: calc(50% - 10px);
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .wrap > section.more > div > .more_right > .brings > .image {height: calc(100% - 0);}
+  .wrap > section.more > div > .more_right > .brings > .sets{
+    /*border: 1px solid red;*/
+    width: 28%;
+    bottom: 0;
+    padding: 0;
+  }
+  .wrap > section.more > div > .more_right > .brings > .sets > div {
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+
+  }
+  .wrap > section.more > div > .more_right > .brings > .sets > div > p {
+    /*border: 1px solid red;*/
+    font-size: 17.5px;
+    margin-top: 3px;
+  }
+
+  .wrap > section.more > div > .more_right > .tackling {height: height: calc(50% - 0);}
+  .wrap > section.more > div > .more_right > .tackling > .sets {margin-top: 89px;}
+  .wrap > section.more > div > .more_right > .tackling > .sets > div {}
+  .wrap > section.more > div > .more_right > .reports > .sets {margin-top: 73px;}
+
+
+  .wrap > section.markets > .part > div > .sets > div { width: 90%}
+  .wrap > section.markets > .part > div > .sets > div > strong { width: 300px;}
+  .wrap > section.markets > .part > .animal > .sets > div > a {width: 350px; }
+  .wrap > section.markets > .part > .price > .sets > div {padding-top: 35px;}
+  .wrap > section.markets > .part > .bioIndustrial > .sets > div > a {width: 350px; }
+  .wrap > section.markets > .part > .agricultural > .sets > div > a {width: 350px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .meat > .sets > div > a {width: 350px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .energy > .sets > div > a {width: 350px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .beauty > .sets > div > a {width: 350px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .price > .sets > div > a {width: 350px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .pharmaceutical > .sets > div > a {width: 350px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .transportation > .sets > div > a {width: 350px; background-position: 0 8px;}
+
+  .wrap > section.markets > .markets_We_Serve > div {margin-left: 58px;}
+}
+
+  /******* 860이하 ******/
+  @media screen and (max-width:860px) {
+  .wrap {/*background-color: #ffc99d;*/}
+  .wrap > section.visual > .description > .headline > h2 {margin-left: 30px; font-size: 43px;}
+  .wrap > section.markets > .part > div > .sets > div > strong {width: 300px;}
+  .wrap > section.markets > .part > div > .sets > div > strong {font-size: 39px;}
+  .wrap > section.markets > .part > .price > .sets > div > strong {font-size: 35px;}
+
+  .wrap > section.markets > .part > .animal > .sets > div > a {width: 300px; background-position: 0 8px;}
+  .wrap > section.markets > .part > .agricultural > .sets > div > a {width: 300px;}
+  .wrap > section.markets > .part > .meat > .sets > div {padding-top: 38px;}
+  .wrap > section.markets > .part > .meat > .sets > div > a {width: 300px;}
+  .wrap > section.markets > .part > .energy > .sets > div {padding-top: 43px;}
+  .wrap > section.markets > .part > .energy > .sets > div > a {width: 300px;}
+  .wrap > section.markets > .part > .beauty > .sets > div {padding-top: 30px;}
+  .wrap > section.markets > .part > .beauty > .sets > div > a {width: 300px;}
+  .wrap > section.markets > .part > .price > .sets > div {padding-top: 30px;}
+  .wrap > section.markets > .part > .price > .sets > div > a {width: 280px;}
+  .wrap > section.markets > .part > .pharmaceutical > .sets > div > a {width: 300px;}
+  .wrap > section.markets > .part > .bioIndustrial > .sets > div > a {width: 300px; }
+  .wrap > section.markets > .part > .transportation > .sets > div > a {width: 300px;}
+
+}
+
+  /******* 760이하 ******/
+  @media screen and (max-width:760px) {
+    .wrap {/*background-color: #dddddd;*/ position: relative;}
+
+    .wrap > header {
+      display: inline-block;
+      position: relative;
+
+    }
+    .wrap > header > .mobile_menu {
+      width: 30px;
+      height: 30px;
+      /*border:1px solid blue;*/
+      background: url('../images/mobile-menu-icon.png') no-repeat center center;
+      background-size: 30px;
+      position: absolute;
+      top:10px;
+      left:10px;
+      z-index: 100;
+    }
+    .wrap > header > .mobile_nav {
+      display: block;
+      /*border: 1px solid red;*/
+      background-color: #ffffff;
+      width: 100%;
+      padding-bottom: 18px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    .wrap > header > .mobile_nav > li { display: block; background-color: #3b4047; text-align: left;}
+    .wrap > header > .mobile_nav > li:first-child { box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.63);}
+    .wrap > header > .mobile_nav.open > li.open {background-color: #dbaa00;}
+    .wrap > header > .mobile_nav.open > li.open > a {color: #ffffff;}
+    .wrap > header > .mobile_nav > li + li {border-top: 1px solid #ffffff;}
+    .wrap > header > .mobile_nav > li > a {
+      /*border: 1px solid green; */
+      display: block;
+      padding: 18px 0 15px 20px;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 15px;
+    }
+    .wrap > header > .mobile_nav > li > a:after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    margin-top: 6px;
+    }
+    .wrap > header > .mobile_nav.open > li.open > a:after {background-color: #ffffff;}
+    .wrap > header > .mobile_nav > li > a:hover {color: #dbaa00;}
+    .wrap > header > .mobile_nav > li > a:hover:after{background-color: #dbaa00;}
+
+    .wrap > header > .mobile_nav > li > ul {display: none;}
+    .wrap > header > .mobile_nav > li.open > ul {display: block;}
+    .wrap > header > .mobile_nav > li > ul > li {}
+    .wrap > header > .mobile_nav > li > ul > li {border-top: 1px solid #ffffff;}
+    .wrap > header > .mobile_nav > li > ul > li > a {
+      background-color: #50596a;
+      padding: 11px 0 11px 34px;
+      font-size: 14px;
+      color: #ffffff;
+      display: block;
+      position: relative;
+    }
+    .wrap > header > .mobile_nav > li > ul > li > ul {display: none;}
+    .wrap > header > .mobile_nav > li > ul > li.open > ul {display: block;}
+    .wrap > header > .mobile_nav > li > ul > li > ul > li {
+      border-top: 1px solid #ffffff;
+    }
+    .wrap > header > .mobile_nav > li > ul > li > ul > li > a {
+      background-color: #50596a;
+      padding: 11px 0 11px 68px;
+      font-size: 14px;
+      color: #ffffff;
+      display: block;
+    }
+
+    .wrap > header > .mobile_nav > .sustainability > ul  > li > .priorities:after {
+      content: '';
+      width: 40px;
+      height: 37px;
+      border-left: 1px solid #ffffff;
+      background: url('../images/plus-black-symbol.png') no-repeat center center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .wrap > header > .mobile_nav > .sustainability > ul  > li > .sustainable:after {
+      content: '';
+      width: 40px;
+      height: 37px;
+      border-left: 1px solid #ffffff;
+      background: url('../images/plus-black-symbol.png') no-repeat center center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .wrap > header > .mobile_nav > .products > ul  > li > .animal:after{
+      content: '';
+      width: 40px;
+      height: 37px;
+      border-left: 1px solid #ffffff;
+      background: url('../images/plus-black-symbol.png') no-repeat center center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .wrap > header > .mobile_nav > .products > ul  > li > .bioindustrial:after{
+      content: '';
+      width: 40px;
+      height: 37px;
+      border-left: 1px solid #ffffff;
+      background: url('../images/plus-black-symbol.png') no-repeat center center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .wrap > header > .mobile_nav > .products > ul  > li > .food:after{
+      content: '';
+      width: 40px;
+      height: 37px;
+      border-left: 1px solid #ffffff;
+      background: url('../images/plus-black-symbol.png') no-repeat center center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .wrap > header > .mobile_nav > .worldwide {background-color: #FFFFFF; border: none;}
+    .wrap > header > .mobile_nav > .worldwide > a {color: #3b4047;}
+    .wrap > header > .mobile_nav > .worldwide > a:after {background-color: #3b4047;}
+    .wrap > header > .mobile_nav > .worldwide > a:hover:after{background-color: #dbaa00;}
+
+    .wrap > header > .mobile_nav > .stories {background-color: #FFFFFF; border-top: 1px solid #3b4047;}
+    .wrap > header > .mobile_nav > .stories > a {color: #3b4047;}
+    .wrap > header > .mobile_nav > .stories > a:after {background-color: #3b4047;}
+    .wrap > header > .mobile_nav > .stories > a:hover:after{background-color: #dbaa00;}
+
+    .wrap > header > .mobile_nav > .contact {background-color: #FFFFFF; border-top: 1px solid #3b4047; border-bottom: 1px solid #3b4047;}
+    .wrap > header > .mobile_nav > .contact > a {color: #3b4047;}
+    .wrap > header > .mobile_nav > .contact > a:after {background-color: #3b4047;}
+    .wrap > header > .mobile_nav > .contact > a:hover:after{background-color: #dbaa00;}
+    .wrap > header > .mobile_nav {display: none}
+    .wrap > header > .mobile_nav.open {display: block}
+
+    .wrap > header > .inner {
+      width: 100%;
+      margin: 0;
+      display: inline-block;
+      text-align: center;
+    }
+    .wrap > header > .inner > h1 {display: inline-block; margin:0; padding: 9px 0; float: none;}
+    .wrap > header > .inner > h1 > a {display: inline-block;}
+    .wrap > header > .inner > h1 > a > img {width: 100px; height: 32px;}
+    .wrap > header > .inner > .util {display: none}
+    .wrap > header > nav {display: none;}
+
+    .wrap > header > .inner > .mobile_search > .mobileSearchBT{
+      width: 38px;
+      height: 30px;
+      /*border: 1px solid red;*/
+      position: absolute;
+      top:10px;
+      right:10px;
+      background: url('../images/mobile-search-icon.png')no-repeat center center;
+      background-size: 38px 30px;
+      z-index: 100;
+    }
+    .wrap > header > .inner > .mobile_search > div {
+      position: absolute;
+      width: 100%;
+      top: 50px;
+      z-index: 800;
+      background: #eeeeee;
+      box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.63);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    .wrap > header > .inner > .mobile_search > div.on {opacity: 1; }
+    .wrap > header > .inner > .mobile_search > div > .mobileSearchBox {
+      padding: 15px;
+      font-size: 14px;
+      display: block;
+    }
+    .wrap > header > .inner > .mobile_search > div > .mobileSearchBox > input {
+      border: none;
+      padding: 0 15px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+      font-weight: bold;
+      pointer-events: visible;
+    }
+
+    .wrap > section.visual { height: 519px;}
+    .wrap > section.visual > video {display: none}
+    .wrap > section.visual > .mobile_bg {
+      width: 100%;
+      height: 390px;
+      background: url('../images/homepage-hero2-1500x900.jpg')no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .wrap > section.visual > .description {display: block; height: auto; top:333px; bottom: auto;}
+    .wrap > section.visual > .description > .headline {top:-190px;}
+    .wrap > section.visual > .description > .headline > h2 {font-size: 27px; line-height: 35px; margin-left: 27px;}
+    .wrap > section.visual > .description > .content {padding: 20px 0 20px 0; }
+    .wrap > section.visual > .description > .content > * {font-size: 21px; line-height: 28px;}
+
+    .wrap > section.more {margin-top: 27px;}
+    .wrap > section.more > div > .more_left {height: 380px; overflow: hidden; margin-bottom: 10px;}
+    .wrap > section.more > div > .more_left > .sets {text-align: center;}
+    .wrap > section.more > div > .more_left > .sets > .more {position: absolute; top:148px; left: 30px;}
+
+    .wrap > section.more > div > .more_right {height: 380px; margin-bottom: 17px;}
+    .wrap > section.more > div > .more_right > .brings > .sets{width: 100%;}
+    .wrap > section.more > div > .more_right > .brings > .sets > div {width: 100%; text-align: center; position: relative;}
+    .wrap > section.more > div > .more_right > .brings > .sets > div > p {margin-top: 7px;}
+    .wrap > section.more > div > .more_right > .brings > .sets > div > .more {position:absolute; top: 77px; left: 30px;}
+
+    .wrap > section.more > div > .more_right > .tackling { position: relative;}
+    .wrap > section.more > div > .more_right > .tackling > .sets {text-align: center; margin-top: 20px; padding: 0;}
+    .wrap > section.more > div > .more_right > .tackling > .sets > div > .more {position: absolute; left: 0;}
+
+    .wrap > section.more > div > .more_right > .reports {position: relative;}
+    .wrap > section.more > div > .more_right > .reports >.sets {text-align: center; margin-top: 20px; padding: 0;}
+    .wrap > section.more > div > .more_right > .reports > .sets > div > .more {position: absolute; left: 0;}
+
+    .wrap > section.markets > .markets_We_Serve {height: auto;}
+    .wrap > section.markets > .markets_We_Serve > div {padding: 22px 0 20px 22px; margin: 0;}
+    .wrap > section.markets > .markets_We_Serve > div > strong { font-size: 28px;}
+
+
+    .wrap > section.markets > .part {height: 975px;}
+    .wrap > section.markets > .part.on {height: auto;}
+    .wrap > section.markets > .part > div {width: 100%; height: 305px;}
+    .wrap > section.markets > .part > div > .sets {text-align: center; height: 303px;}
+    .wrap > section.markets > .part > div > .sets > div {width: 50%; padding:0; margin-top: 102px;}
+    .wrap > section.markets > .part > .meat > .sets > div {padding: 0;}
+    .wrap > section.markets > .part > .energy > .sets > div {padding: 0;}
+    .wrap > section.markets > .part > .price > .sets > div {padding: 0; margin-top: 80px;}
+    .wrap > section.markets > .part > .beauty > .sets > div {padding: 0;margin-top: 80px;}
+
+    .wrap > section.markets > .part > div > a > div {bottom: 2px; background-color: rgba(0,0,0, 0.7);}
+    .wrap > footer {margin-top: 170px;}
+    .wrap > footer > .inner > div {display: block;}
+  }
+
+/******* 400이하 하*****/
+@media screen and (max-width:400px) {
+  .wrap {}
+  .wrap > section.visual {height: 597px;}
+  section.more > div > .more_left {position: relative;}
+  section.more > div > .more_left > .image {
+    /*height: -webkit-fill-available;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+  }
+  .wrap > section.more > div > .more_left > .sets {padding: 0; padding-top: 76px;}
+  section.more > div > .more_right > .brings > .sets > div > h3 {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+  }
+  section.more > div > .more_right > div > .sets > div > h3 > a {
+    font-weight: normal;
+    font-size: 15px;
+    width: 80%;
+    display: inline-block;
+
+  }
+  .wrap > section.more > div > .more_right > div {
+    height: 215px;
+  }
+  .wrap > section.more > div > .more_right > .tackling > .sets {
+    width: 90%;
+    left: 3px;
+    display: inline-block;
+  }
+  .wrap > section.more > div > .more_right > .tackling > .sets > div > .more {left: 5px; margin-top: 15px;}
+  section.more > div > .more_right > .tackling > .sets > div > h3 > a {
+    font-size:
+  }
+  .wrap > section.more > div > .more_right > .reports > .sets {
+    width: 90%;
+    left: 13px;
+    display: inline-block;
+  }
+  section.more > div > .more_right > .reports > .sets > div > h3 > a {
+    font-size:
+  }
+  .wrap > section.more > div > .more_right > .reports > .sets > div > .more {left:5px; margin-top: 25px;}
+  .wrap > section.more > div > .new_all > .left {margin-top: 30px;}
+  .wrap > section.more > div > .new_all > .right {margin-top: 30px;}
+  .wrap > section.markets > .part > div > .sets {display: none;}
+
+  footer > .inner {padding-left: 25px;}
+  footer > .inner > .social_link { margin-top: 10px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

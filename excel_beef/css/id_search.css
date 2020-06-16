@@ -1,0 +1,10 @@
+/*reset*/
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd,fieldset{margin:0;padding:0;text-align: center;}
+/*body{font-family:"나눔 고딕", "맑은 고딕", "돋움";font-size:14px;}*/
+a{text-decoration:none;color:#222}
+ul,li{list-style:none}
+
+h2 {margin: 50px 0 20px 0; color: #333; text-align: center; font-size: 24px}
+p {text-align: center; font-size: 16px;color: #ca0000; margin-bottom: 20px}
+a {display: inline-block;margin: auto; background: #999; padding: 5px 10px 8px 10px; color: #fff; border-radius: 5px; line-height: 16px }
+span {font-size: 20px}

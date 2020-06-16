@@ -1,0 +1,86 @@
+/*reset*/
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd{margin:0;padding:0;}
+body{font-family:"나눔 고딕", "맑은 고딕", "돋움";font-size:14px;}
+a{text-decoration:none;color:#222}
+ul,li{list-style:none}
+address{font-style:normal}
+
+/*skip_menu*/
+.skip_menu {position: relative; z-index: 1000;}
+.skip_menu a {display: block; position: absolute;top:-60px; left: 0;width: 150px; border: 2px solid #7e2f34;text-align: center;background: #666;color: #fff}
+.skip_menu a:active,.skip_menu a:focus{top:0;z-index:1000;text-decoration:none}
+.skip_menu span{display:inline-block;padding:2px 6px 0 0;color:#fff;letter-spacing:-1px;font-size:13px;line-height:26px}
+.skip_menu >.footer {/*top:168px;*/padding-top: 0;}
+    
+.wrap {width: 100%; overflow: hidden}
+/*header*/
+.header { width: 1200px;margin: auto; padding-top: 35px; position: relative; z-index: 10;}
+.header h1 {width:380px;height: 47px; text-indent: -9999px;background: url(../images/logo.png) no-repeat; margin: auto;}
+.header h1 a {display:block; height: 100%;}
+.header .gnb {padding-top: 64px; text-align: center;margin-bottom: 20px;}
+.header .gnb h2 {position: absolute; left: -9999px; top: -9999px;}
+.header .gnb ul{ overflow: hidden;display: inline-block;}
+.header .gnb ul li {text-indent: -9999px; float: left;margin-right: 120px;}
+.header .gnb ul li:last-child {margin-right: 0}
+.header .gnb ul li a {display: block;height: 100%;}
+.header .gnb ul .gm01 {width:95px ;height:16px;background: url(../images/gnb01.jpg) no-repeat;}
+.header .gnb ul .gm01 a:hover {background: url(../images/gnb01_1.jpg) no-repeat;}
+.header .gnb ul .gm02 {width:91px ;height:16px;background: url(../images/gnb02.jpg) no-repeat;}
+.header .gnb ul .gm02 a:hover {background: url(../images/gnb02_1.jpg) no-repeat;}
+.header .gnb ul .gm03 {width:138px ;height:16px;background: url(../images/gnb03.jpg) no-repeat;}
+.header .gnb ul .gm03 a:hover {background: url(../images/gnb03_1.jpg) no-repeat;}
+.header .gnb ul .gm04 {width:68px ;height:16px;background: url(../images/gnb04.jpg) no-repeat;}
+.header .gnb ul .gm04 a:hover {background: url(../images/gnb04_1.jpg) no-repeat;}
+.header .gnb ul .gm05 {width:139px ;height:16px;background: url(../images/gnb05.jpg) no-repeat;}
+.header .gnb ul .gm05 a:hover {background: url(../images/gnb05_1.jpg) no-repeat;}
+.header .top_menu {position: absolute; top: 35px; right: 0;}
+.header .top_menu ul {overflow: hidden; margin-bottom: 39px;}
+.header .top_menu ul li {text-indent: -9999px; float: left;margin-right: 10px;}
+.header .top_menu ul li a {height: 100%; display: block; overflow: hidden;}
+.header .top_menu ul .tm01 {width: 50px;height: 16px;background: url(../images/top01.jpg) no-repeat;}
+.header .top_menu ul .tm01 a:hover {background: url(../images/top01_1.jpg) no-repeat left;transition: 0.4s;}
+.header .top_menu ul .tm02 {width: 66px;height: 17px;background: url(../images/top02.jpg) no-repeat;}
+.header .top_menu ul .tm02 a:hover {background: url(../images/top02_1.jpg) no-repeat;transition: 0.4s;}
+.header .top_menu ul .tm03 {width: 47px;height: 17px;background: url(../images/top03.jpg) no-repeat;}
+.header .top_menu ul .tm03 a:hover {background: url(../images/top03_1.jpg) no-repeat;transition: 0.4s;}
+.header .top_menu ul .tm04 {width: 55px;height: 17px;background: url(../images/top04.jpg) no-repeat; margin-right: 0}
+.header .top_menu ul .tm04 a:hover {background: url(../images/top04_1.jpg) no-repeat;transition: 0.4s;}
+.header .search_bt {width: 31px; height: 35px;background: url(../images/search.png) no-repeat; position: absolute; top: 135px; right:0; display: block; text-indent: -9999px;}
+.header .search_bt:hover {background: url(../images/search_1.png) no-repeat;}
+.header .search {text-align: center;width: 1000px; border: 5px solid #7e2f34; position: absolute; top: 184px; left: 50%; margin-left: -500px;background-color:rgba(255,255,255,0.8);}
+.header .search fieldset {border: 0; padding-bottom: 10px;}
+.header .search fieldset legend {position: absolute; top: -9999px; left: -9999px;}
+.header .search fieldset label {position: absolute; top: -9999px; left: -9999px;}
+.header .search fieldset input {width: 750px; text-align: center; font-size: 30px; color: #999; letter-spacing: 4px; font-weight: bold; border:0;background-color:rgba(255,255,255,0.8);}
+.header .search fieldset button {width: 40px; height: 40px; background: url(../images/header_search.png) no-repeat; border: 0; margin-top: 2px; position: absolute; top: 0;}
+.header .top_menu ul .tm05 {margin-right: 0;margin-left: 10px;}
+.header .top_menu ul .tm05 a {padding: 1px 3px 2px 3px;background: #7e2f32;border-radius: 5px;color: #fff;text-indent: 0;text-align: center;font-family: "나눔고딕";font-size: 13px;}
+.header .top_menu ul .tm05 > a:hover{opacity: 0.7;transition: .3s}
+.header .top_menu ul .tm05 p{width:53px;height:30px; background: url(../images/tm05-1.png) no-repeat; margin: auto; margin: 1px 0 0 -5px;}
+.header .top_menu ul .tm06 a{width: 62px; height: 16px;background: url(../images/tm06.jpg) no-repeat;}
+.header .top_menu ul .tm06 a:hover {background: url(../images/tm06_1.jpg) no-repeat;}
+.header .top_menu .admin_page{width: 123px; height: 16px; background: url(../images/tm07.jpg) no-repeat; display: block; text-indent: -9999px;position: absolute; right: 0}
+.header .top_menu .admin_page:hover {background: url(../images/tm07_1.jpg) no-repeat;}
+
+.content {text-align: center; padding-top: 100px; position: relative;margin-bottom: 100px;}   
+.content .content_wrap {width: 1200px; margin: auto; position: relative}
+.content .content_wrap .location { position: absolute; top: -60px; right: 0}
+.content .content_wrap .location span {position: absolute; left: -9999px; top: -9999px;}
+.content .content_wrap .location ul {overflow: hidden}
+.content .content_wrap .location ul li {float: left; color: #333}
+.content .content_wrap .location ul li:last-child {padding-left: 5px;font-weight: bold}
+.content h2 {font-size: 28px; color: #333;margin-bottom: 30px;}
+.content table {width: 100%;padding: 0; margin-bottom: 30px; border-collapse: collapse;text-align: center; }
+.content table thead tr td {border-top: 1px solid #333;padding: 10px 0 9px; color: #333;}
+.content table thead tr .col1 {width: 5%;}
+.content table thead tr .col2 {width: 66%}
+.content table thead tr .col3 {width:12%;background:url(../images/nitice_icone.png) no-repeat 31px 12px; }
+.content table thead tr .col4 {width:12%;background:url(../images/nitice_icone01.png) no-repeat 31px 12px;}
+.content table thead tr .col5 {width: 5%;background:url(../images/nitice_icone02.png) no-repeat 0 12px; text-align: right; padding-right: 9px}
+
+.content table tbody tr td {border-top: 1px solid #666;padding: 10px 0 9px; color: #666; border-bottom: 1px solid #cfcfcf}
+.content table tbody tr td a {display: block; height: 100%}
+.content table tbody tr td:first-child {color:#333}
+.content p {text-align: right}
+.content p .edit_bt{padding: 5px 10px; background: #666; border-radius: 5px; color: #fff;font-weight: 600}
+.content p .edit_bt:hover{background: #999}
